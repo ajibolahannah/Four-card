@@ -1,0 +1,126 @@
+h2{
+    text-align: center;
+    color: rgb(86,84,100);
+    font-weight: 500;
+}
+h1{
+    text-align: center;
+    color: rgb(86,84,100);
+}
+.aiwork{
+    color: rgb(86,84,100);
+    text-align: center;
+    align-items: center;
+}
+.gridbox{
+padding: 10px;
+display: grid;
+margin: 0% 50% 0% 50%;
+justify-content: center;
+text-align: center;
+align-items: center;
+justify-content: center;
+grid-template-columns:repeat(4, 1fr);
+/* grid-template-rows: repeat(4, 1fr); */
+gap: 20px;
+
+}
+.Supervisor{
+    background-color: white;
+    box-shadow: 2px 2px 2px 2px  hsl(229, 6%, 66%);
+    width: 350px;
+    height: 200px;
+    padding: 12px;
+    text-align: center;
+    margin: 10px;
+    margin-top: -32%;
+    border-top: 5px solid hsl(180, 62%, 55%);
+    border-radius: 5px;
+    grid-row-start: 2; 
+  
+}
+.Team{
+    background-color: white;
+    box-shadow: 2px 2px 2px 2px hsl(229, 6%, 66%);
+    width: 350px;
+    height: 200px;
+    padding: 12px;
+    text-align: center;
+    margin: 10px;
+    border-radius: 5px;
+    border-top: 5px solid hsl(0, 78%, 62%);
+    grid-column-start: 2;
+}
+.Karma{
+    background-color: white;
+    box-shadow: 2px 2px 2px 2px  hsl(229, 6%, 66%);
+    width: 350px;
+    height: 200px;
+    padding: 12px;
+    text-align: center;
+    margin: 10px;
+    border-radius: 5px;
+    border-top: 5px solid hsl(34, 97%, 64%);
+    grid-row-start: 2;
+}
+.Calculator{
+    background-color: white;
+    box-shadow: 2px 2px 2px 2px  hsl(229, 6%, 66%);
+    width: 350px;
+    height: 200px;
+    padding: 12px;
+    text-align: center;
+    margin: 10px;
+    margin-top: -32%;
+    border-radius: 5px;
+    border-top: 5px solid  hsl(212, 86%, 64%);
+    grid-row-end :3;
+}
+img{
+position: relative;
+/* top: -5px; */
+left: 38%;
+}
+.plu{
+      color: rgb(86,84,100);
+      font-weight: 500;
+}
+@media screen and (max-width:1140px)  {
+    .Supervisor{
+      grid-area: 1 / 1 / 2 / 2;
+    }
+    
+    .Team{
+        grid-area: -6 / 3 / 2 / 4;
+    }
+    
+    .Karma{
+      grid-area: 3 / 1 / 4 / 2;
+    }
+    
+    .Calculator{
+    grid-area: 3/ 3 / 4 / 4;
+    }
+
+    .box {
+        width: 130%;
+        padding: 15px;
+    }
+
+    .gridbox {
+        display: grid;
+      grid-template-columns: 1fr, 10px, 1fr;
+        grid-template-rows:repeat(4, 150px);
+        max-width: 80vw;
+        margin: 200px auto;
+        column-gap: 0px;
+        align-self: unset;
+        justify-self: unset;
+    }
+}
+@media (max-width:480px) {
+    .gridbox{
+        display: flex;
+        flex-direction: column;
+    }
+}
